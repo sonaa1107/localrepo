@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>second repo</title>
+    <title>myntra prac</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h4>this is my second repo</h4>
-    <h4>its good to gain knowledge about git and github</h4>
-    <ol>
-        <li> apple</li>
-        <li>pineapple</li>
-        <li>banana</li>
-    </ol>
-    
+    <button class="b1" onclick="cartQunatity+=1 ;document.querySelector('#cart').innerText=`Your Bag has ${cartQuantity} items`;">Add to Bag</button>
+
+
+    <button id="b2" onclick="cartQunatity-=1 ;document.querySelector('#cart').innerText=`Your Bag has ${cartQuantity} items`;"> move to wishlist</button>
+
+
+    <button class="b1" onclick="cartQunatity+=2 ;document.querySelector('#cart').innerText=`Your Bag has ${cartQuantity} items`;" > Add 1+1 sale item</button>
+
+    <h1 id="cart"></h1>
+<script>
+    let cartQuantity=0;
+    document.querySelector('#cart').innerText=`Your Bag has ${cartQuantity} items`;
+</script>    
 </body>
 </html>
